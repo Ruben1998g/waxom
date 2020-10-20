@@ -1,0 +1,111 @@
+.wordepress-theme{
+	background-image:linear-gradient( 90deg, rgb(33,27,25) 0%, rgb(78,52,39) 100%);
+}
+
+.wordpress-theme__wrap{
+	
+	display:flex;
+	justify-content:space-between;
+	width:@desktop-width;
+	margin:0 auto;
+	padding-top:36px;
+	padding-bottom:36px;
+}
+
+
+
+.wordpress-theme__wrap div h2{
+	font-family:Raleway, sans-serif;
+	font-size:28px;
+	line-height:42px;
+	color:white;
+	margin:0;
+	padding:0;
+}
+
+.wordpress-theme__wrap div h2 span{
+	color:#c7b299;
+}
+
+.wordpress-theme__wrap div p{
+	font-family:Monsterrat, sans-serif;
+	font-size:18px;
+	line-height:27px;
+	color:#615855;
+	font-weight:300;
+	margin:0;
+	padding:0;
+}
+
+.wordpress-theme__wrap div:last-child{
+	display:flex;
+}
+
+.wordpress-theme__wrap div a{
+	margin:0;
+	padding:0;
+	background-color:#998675;
+	display:block;
+	margin:0;
+	padding:0;
+	padding:16px 24px;
+	border-radius:4px;
+	border-bottom:3px solid #736357;
+	color:white;
+	text-decoration:none;
+	margin-right:24px;
+	margin-top:auto;
+	margin-bottom:auto;
+	text-transform:uppercase;
+}
+
+.wordpress-theme__wrap div a:hover{
+	background-color:#917159;
+	border-bottom:3px solid #625449;
+	transition-property: background-color, border-bottom;
+	transition-duration:0.6s, 0.6s;
+}
+
+@media(max-width:1246px){
+	.wordpress-theme__wrap{
+		width:746px;
+	}
+
+	.wordpress-theme__wrap div:first-child h2{
+		font-size:20px;
+		line-height:30px;
+	}
+
+	.wordpress-theme__wrap div:last-child a{
+		font-size:16px;
+		line-height:24px;
+	}
+}
+
+@media(max-width:746px){
+	.wordpress-theme__wrap{
+		width:320px;
+		flex-direction:column;
+		padding:30px 0;
+	}
+
+	.wordpress-theme__wrap h2{
+		text-align:center;
+	}
+
+	.wordpress-theme__wrap p{
+		text-align:center;
+		margin-top:8px !important;
+	}
+
+	.wordpress-theme__wrap div:last-child{
+		display: flex;
+		margin-top:14px;
+	}
+
+	.wordpress-theme__wrap div a{
+		text-align:center;
+		margin-right:0;
+		margin:auto;
+	}
+}

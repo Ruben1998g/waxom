@@ -1,0 +1,155 @@
+.advantages{
+	width:@desktop-width;
+	margin:0 auto;
+}
+
+
+.advantages ul{
+	list-style:none;
+	display:flex;
+	justify-content:space-between;
+	margin:0;
+	padding:0;
+	margin-top:78px;
+	margin-bottom:78px;
+}
+
+.advantages ul li{
+	width:262px;
+	position:relative;
+	cursor:pointer;
+}
+
+.advantages ul li:first-child span{
+	display:block;
+	width:49px;
+	height:49px;
+	background-image:url('../img/icon-1.png');
+
+}
+
+.advantages ul li:nth-child(2) span{
+	display:block;
+	width:44px;
+	height:40px;
+	background-image:url('../img/icon-2.png');
+}
+
+.advantages ul li:nth-child(3) span{
+	display:block;
+	width:44px;
+	height:44px;
+	background-image:url('../img/icon-3.png');
+}
+
+.advantages ul li:last-child span{
+	display:block;
+	width:52px;
+	height:36px;
+	background-image:url('../img/icon-4.png');
+}
+
+.advantages ul li:hover h3{
+	color:#c7b299;
+	transition:0.6s color;
+}
+
+.advantages ul li:hover::after{
+	background-color:#c7b299;
+	transition:0.6s background-color;
+}
+
+.advantages ul li:first-child:hover span{
+	background-image:url('../img/icon-1-hover.png');
+	transition:0.6s background-image;
+
+}
+
+.advantages ul li:nth-child(2):hover span{
+	background-image:url('../img/icon-2-hover.png');
+	transition:0.6s background-image;
+}
+
+.advantages ul li:nth-child(3):hover span{
+	background-image:url('../img/icon-3-hover.png');
+	transition:0.6s background-image;
+}
+
+.advantages ul li:last-child:hover span{
+	background-image:url('../img/icon-4-hover.png');
+	transition:0.6s background-image;
+}
+
+.advantages ul li span{
+	margin-left:auto;
+	margin-right:auto;
+}
+
+.advantages ul li h3{
+	font-family:Raleway, sans-serif;
+	font-weight:700;
+	font-size:22px;
+	line-height:33px;
+	color:#555555;
+	text-align:center;
+	margin:0;
+	margin-top:16px;
+	margin-bottom:12px;
+}
+
+.advantages ul li p{
+	font-family:Montserrat, sans-serif;
+	font-weight:300;
+	font-size:14px;
+	line-height:24px;
+	color:#8c8c8c;
+	text-align:center;
+	margin:0;
+	margin-bottom:30px;
+}
+
+.advantages ul li:after{
+	content:"";
+	position:absolute;
+	display:inline-block;
+	background-color:#f1eee9;
+	width:70px;
+	height:3px;
+	bottom:0;
+	left:50%;
+	transform:translateX(-50%);
+}
+
+@media(max-width:1246px){
+	.advantages{
+		width:746px
+	}
+
+	.advantages ul{
+		flex-direction:column;
+		margin-top:40px;
+		margin-bottom:20px;
+	}
+
+	.advantages ul li{
+		margin-left:auto;
+		margin-right:auto;
+	}
+
+	.main-page .advantages ul li:after{
+		content:unset;
+	}
+}
+
+
+@media(max-width:746px){
+
+	.advantages{
+		width:320px;
+	}
+
+	.advantages ul{
+		margin-top:30px;
+		margin-bottom:10px;
+	}
+}

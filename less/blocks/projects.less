@@ -1,0 +1,145 @@
+.projects{
+	width:@desktop-width;
+	margin:0 auto;
+	display:flex;
+	flex-direction:column;
+	padding:80px 0;
+}
+
+.projects h2{
+	font-family:Raleway, sans-serif;
+	font-weight:700;
+	text-align:center;
+	font-size:30px;
+	line-height:45px;
+	color:#555555;
+	width:782px;
+	margin:0 auto;
+	margin-bottom:14px;
+}
+
+.projects p{
+	font-family:Montserrat, sans-serif;
+	font-weight:300;
+	text-align:center;
+	font-size:16px;
+	line-height:28px;
+	color:#8c8c8c;
+	width:782px;
+	margin:0 auto;
+	margin-bottom:30px;
+}
+
+
+.projects a{
+	margin:0;
+	padding:0;
+	background-color:#998675;
+	display:block;
+	margin:0;
+	padding:0;
+	padding:16px 24px;
+	border-radius:4px;
+	border-bottom:3px solid #736357;
+	color:white;
+	text-decoration:none;
+	text-transform:uppercase;
+	margin:0 auto;
+	display:inline-block;
+	margin-top:60px;
+
+}
+
+.projects a:hover{
+	background-color:#917159;
+	border-bottom:3px solid #625449;
+	transition-property: background-color, border-bottom;
+	transition-duration:0.6s, 0.6s;
+}
+
+@media(max-width:1246px){
+	.projects{
+		width:746px;
+		padding-top:40px;
+		padding-bottom:40px;
+	}
+
+	.projects p{
+		width:746px;
+	}
+
+	.projects .tabs ul li{
+		width:200px;
+		margin-right:73px;
+	}
+
+	.projects .tabs ul li h2{
+		width:200px;
+		text-align:center;
+		padding-left:0;
+		margin-top:10px;
+	}
+
+	.projects .tabs ul li p{
+		width:200px;
+		padding-left:0;
+		text-align:center;
+	}
+
+	.projects .tabs ul li img{
+		width:200px;
+	}
+}
+
+@media(max-width:746px){
+	.projects{
+		width:320px;
+		padding-top:28px;
+	}
+
+	.projects h2{
+		width:320px;
+		margin-bottom:9px;
+	}
+
+	.projects p{
+		width:320px;
+		margin-bottom:16px;
+	}
+
+	.tabs ul{
+		display:flex;
+		justify-content:space-between;
+		margin-top:20px !important;
+		margin-bottom:0px !important;
+	}
+
+	.tabs div{
+		display:flex;
+		justify-content:space-between;
+	}
+
+	.tabs div ul li{
+		display:flex;
+		margin-right:0 !important;
+		width:320px !important;
+
+	}
+
+	.tabs div ul li{
+		margin-bottom:120px !important;
+		margin-top:0;
+	}
+
+	.tabs ul li img{
+		width:320px !important;
+	}
+
+	.tabs label{
+		margin-bottom:10px;
+	}
+
+	.tabs+a{
+		margin-top:16px !important;
+	}
+}
